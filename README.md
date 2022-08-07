@@ -1,3 +1,3 @@
 # DaisyUi for Svelte
 
-An Unofficial DaisyUi for Svelte Porting    
+An Unofficial DaisyUi for Svelte Porting

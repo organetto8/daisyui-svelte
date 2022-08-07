@@ -9,11 +9,11 @@
     let id: string = randomId();
 
     let componentClass: string = [
-        'input',
-        `input-${size}`,
-        bordered ? 'input-bordered' : '',
-        ghost ? 'input-ghost' : '',
-        color !== '' ? `input-${color}` : '',
+        'select',
+        `select-${size}`,
+        bordered ? 'select-bordered' : '',
+        ghost ? 'select-ghost' : '',
+        color !== '' ? `select-${color}` : '',
         userClass
     ].join(' ');
 
@@ -22,5 +22,7 @@
 </script>
 
 <div class="">
-    <input type="text" id={id} class='{componentClass}' {...$$restProps}>
+    <select id={id} class='{componentClass}' {...$$restProps}>
+        <slot/>
+    </select>
 </div>

@@ -1,7 +1,8 @@
 <script lang="ts">
-	import { Button, Modal, ModalAction, ModalBox, ModalButton, Dropdown, DropdownContent } from '$lib/Actions';
-	import { Alert, Avatar, AvatarGroup, Collapse, CollapseContent, CollapseTitle, Countdown, Badge, Kbd, Card, CardBody, CardImage, CardTitle, Progress, RadialProgress, Stat, StatDesc, StatFigure, StatTitle, StatValue, StatsGroup } from '$lib/DataDisplay';
-	import { Checkbox, FormControl, Radio, Range, Rating, Select, TextInput, Toggle } from '$lib/DataInput';
+	import { Button, Modal, ModalAction, ModalBox, ModalButton, Dropdown, DropdownContent } from '$lib';
+	import { Alert, Avatar, AvatarGroup, Collapse, CollapseContent, CollapseTitle, Countdown, Badge, Kbd, Card, CardBody, CardImage, CardTitle, Progress, RadialProgress, Stat, StatDesc, StatFigure, StatTitle, StatValue, StatsGroup } from '$lib';
+	import { Checkbox, FormControl, Radio, Range, Rating, Select, TextInput, Toggle } from '$lib';
+	import { Mask } from '$lib';
 
 	let value: number = 10;
 
@@ -76,5 +77,9 @@
     <Range min="0" max="100" step="50" color="primary" size="lg" dashed/>
 
     <Rating max="5" value='2' shape="heart"/>
+
+	<Mask>
+		<img src="https://placeimg.com/160/160/arch" alt="mammt"/>
+	</Mask>
 
 </main>

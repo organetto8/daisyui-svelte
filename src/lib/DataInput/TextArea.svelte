@@ -2,22 +2,20 @@
     import { randomId } from "$lib/utils";
 
     let color: string = '';
-    let size: string = 'md';
     let bordered: boolean = false;
     let ghost: boolean = false;
     let userClass: string = '';
     let id: string = randomId();
 
     let componentClass: string = [
-        'input',
-        `input-${size}`,
-        bordered ? 'input-bordered' : '',
-        ghost ? 'input-ghost' : '',
-        color !== '' ? `input-${color}` : '',
+        'textarea',
+        bordered ? 'textarea-bordered' : '',
+        ghost ? 'textarea-ghost' : '',
+        color !== '' ? `textarea-${color}` : '',
         userClass
     ].join(' ');
 
-    export { id, color, size, bordered, ghost, userClass as class};
+    export { id, color, bordered, ghost, userClass as class};
 
 </script>
 

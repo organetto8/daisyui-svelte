@@ -3,6 +3,7 @@ export * from './Card';
 export * from './Collapse';
 export * from './Progress';
 export * from './Stats';
+export * from './Table';
 
 export { default as Alert } from './Alert.svelte';
 export { default as Badge } from './Badge.svelte';
